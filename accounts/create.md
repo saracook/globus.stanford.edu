@@ -1,6 +1,6 @@
 ---
 layout:      page
-toc:  true
+toc:  false
 title:      Globus Account Creation
 id: accounts
 see-also: true
@@ -29,6 +29,12 @@ presented with the login page:
 
 Select *Stanford University* from the list, and click the *Continue* button.
 
+{% include info-box.html
+   icon = "users"
+   header="Google, ORCID, or ACCESS?  Not yet…"
+   content="If you have a Stanford Google account, an ORCID, or an NSF ACCESS account, hold off on signing in through those pathways.  Sign in through 'Stanford University' first."
+%}
+
 When you click on the *Continue* button, you will be taken to the normal
 Stanford University login page.  If you have not logged in today, or on this
 browser, you may be prompted to log in and/or two-step.
@@ -55,7 +61,7 @@ After clicking the _Continue_ button, you will be asked for some more
 information (such as if you plan on using the service for commercial purposes.
 
 {% include hero-image.html
-   src="/assets/accounts/Login/LoginInformationGathering.png"
+   src="/assets/accounts/LoginInformationGathering.png"
    alt="Globus login screen"
    caption-overlay=true
    caption-header="First-Time user information collection"
@@ -94,6 +100,8 @@ Click the _Allow_ button, and you will be taken to the Globus transfer page.
 Congratulations!  You have successfully logged in to Globus, and your Stanford
 account has been associated with an identity.
 
-
-
-
+{% include info-box.html
+   icon = "users"
+   header="Google, ORCID, or ACCESS?  Now's the time!"
+   content="If you have a Stanford Google account, an ORCID, or an NSF ACCESS account, now is a good time to link those identities!"
+%}
