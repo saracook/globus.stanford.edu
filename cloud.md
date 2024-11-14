@@ -21,7 +21,6 @@ name for more information.
 |---------------|-----------------------|
 | <a href="#amazon-s3">Amazon S3</a> | ✅ |
 | <a href="#s3-compatible-storage">S3-compatible storage</a> | ✅ |
-| <a href="#box">Stanford Box</a> | ❌ |
 | <a href="#box">Medicine Box</a> | ❌ |
 | <a href="#ceph">Ceph</a> | ❌ |
 | <a href="#dropbox">Dropbox</a> | ❌ |
@@ -35,7 +34,7 @@ name for more information.
 &nbsp;
 
 {% capture collection-under-construction %}
-<h2>Under Construction</h2>
+<h4>Under Construction</h4>
 <p>This collection is still under construction, and is likely going to change
 in the future.  If you run into problems accessing it, contact us for <a href="support.html">support.</a></p>
 {% endcapture %}
@@ -120,25 +119,13 @@ us](mailto:srcc-support@stanford.edu) for general advice.
 
 # Box
 
-{% include info-box.html
-   icon="biohazard"
-   header="Medicine Box Unavailable"
-   content="Stanford's Globus subscription has not gone through the necessary Security & Privacy reviews for access to High Risk data, so access to Medicine Box is blocked."
-%}
+Although Stanford's subscription does support the Box connector, University IT
+does not provide Box storage as a service.
 
-**The Stanford Box service was retired** on February 28, 2023.  At that time,
-Globus for Box stopped working.  It is no longer possible to access Box through
-Stanford's Globus subscription.
-
-This collection previously gave you access to your Box files, as well as to
-folders which have been shared with you.
-
-Globus does not copy any custom metadata or permissions from files it
-downloads.  Uploaded items will inherit the permissions of the parent folder.
-
-When uploading, Globus will respect the permissions set on the destination; if
-you do not have write permission, uploads will fail with a "Permission Denied"
-error.
+The School of Medicine does offer a Box instance—known as "Medicine Box"—but
+Stanford's Globus subscription has not gone through the necessary Security &
+Privacy reviews for access to High Risk data, so access to Medicine Box is
+blocked.
 
 # Ceph
 
@@ -166,10 +153,18 @@ you are interested in this.
 
 # Google Cloud Storage
 
+{% capture google-account-required %}
+<h4>Stanford Google Account Required</h4>
+<p>To access Google Cloud Storage, you need a Stanford Google account.  If you
+have Stanford email, you have a Stanford Google account.  If you do not have
+Stanford email, you & your sponsor should read about <em><a title="Stanford Google Workspace ID for Base SUNet IDs" href="https://uit.stanford.edu/service/accounts/googleworkspace-id">Stanford Google Workspace ID for Base SUNet IDs</a></em>.</p>
+{% endcapture %}
+{% comment %}
+Capture is in the Google Cloud Storage section, above
+{% endcomment %}
 {% include info-box.html
    icon="id-card"
-   header="Full SUNetID Required"
-   content="To interact with Google services through Stanford, you must have a full or full-sponsored SUNetID.  Therefore, using the Globus Google connector also requires a full (or full-sponsored) SUNetID."
+   raw=google-account-required
 %}
 
 {% include info-box.html
@@ -182,16 +177,17 @@ Google Cloud Storage may be accessed through the [Stanford Google
 Cloud](https://app.globus.org/file-manager/collections/1a7d4931-986a-42f5-80fc-1fafe28f9826/overview)
 collection.
 
+[Go here for detailed information on how to use Globus with Google Cloud Storage]({{ "cloud/cloud.html" | absolute_url }}).
+
 When using Google Cloud Storage, Globus will act on your behalf.  You will be
 able to access any buckets outside of the VPC Service Perimeter.  In other
 words, you will not be able to access buckets associated with Nero projects,
 and other High Risk projects.
 
-
 # Google Drive
 
 {% capture drive-limits %}
-<h2>Incoming Google Drive limits</h2>
+<h4>Incoming Google Drive limits</h4>
 <p>Starting September 1, 2024: Google Drive spaces
 (including your 'My Drive' space and all Shared Drives) will have a 50 GB quota.
 <b><a title="Transitioning to a Sustainable Google Workspace" href="https://uit.stanford.edu/news/transitioning-sustainable-google-workspace">Read the transition announcement</a></b>.</p>
@@ -204,7 +200,7 @@ and other High Risk projects.
 {% include info-box.html
    icon="id-card"
    header="Full SUNetID Required"
-   content="To interact with Google services through Stanford, you must have a full or full-sponsored SUNetID.  Therefore, using the Globus Google connector also requires a full (or full-sponsored) SUNetID."
+   content="To interact with Google Drive through Stanford, you must have a full or full-sponsored SUNetID.  Therefore, using the Globus Google connector also requires a full (or full-sponsored) SUNetID."
 %}
 
 {% include info-box.html
