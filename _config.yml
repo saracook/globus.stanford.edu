@@ -1,9 +1,5 @@
+baseurl: /globus.stanford.edu
 
-# The title and slogan are for the entire site.
-# The "slogan" appears directly below the title, in smaller italics.
-# The "image" is a URL that is relative to your site root.
-# The title and image are required.  If you do not want a slogan, change it to
-# "null" (_without_ the quotes).
 title: "Globus @ Stanford"
 slogan: "Research data management simplified.  For you.  For free."
 image: "/assets/globus_square.png"
