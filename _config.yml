@@ -117,10 +117,17 @@ defaults:
         # set, your site's image will be used instead.
         image: null
 
+# This is configuration used by the jekyll-feed plugin.
+# excerpt_only disables including full post content in the feed.
+feed:
+  excerpt_only: true
+  icon: "/assets/globussquare.png"
+
 # These are Jekyll plugins that we enable.
 # NOTE: We can only use plugins that GitHub makes available.
 # The list is here: https://pages.github.com/versions/
 plugins:
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-titles-from-headings
