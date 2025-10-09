@@ -20,7 +20,7 @@ $(document).ready(function() {
     labelSelect.htmlFor = "permissions" + index;
     label.textContent = "Permissions";
     const newFieldset = document.createElement("div");
-    newFieldset.prepend(label);
+    newFieldset.prepend(label,labelSelect);
     newFieldset.className = "row-added input-group row-" + index;
     newFieldset.dataset.row = index;
     const input = document.createElement("input");
