@@ -123,6 +123,10 @@ feed:
   excerpt_only: true
   icon: "/assets/globussquare.png"
 
+# It looks like jekyll-feed is not automatically setting the URL for posts.
+# So, set the URL explicitly.
+url: https://globus.stanford.edu
+
 # These are Jekyll plugins that we enable.
 # NOTE: We can only use plugins that GitHub makes available.
 # The list is here: https://pages.github.com/versions/
