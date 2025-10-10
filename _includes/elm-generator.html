@@ -3,6 +3,7 @@
     <form class="form-inline" id="elm-fieldset" spellcheck="false" autocorrect="off" autocapitalize="off">
       <div class="input-group row-1" data-row="1">
         <label for="bucket1" class="sr-only">Bucket</label>
+        <label class="sr-only" for="permissions1"></label>
         <input type="text" id="bucket1" name="bucket" class="form-control bucket" placeholder="Bucket example: allcats">
         <select id="permissions1" class="form-select permissions" data-row="1">
           <option value="read" data-icon="eye">Read-Only</option>
@@ -18,9 +19,9 @@
     <a class="flex-shrink-1 btn btn-outline-secondary" id="clearButton"><i class="fa-solid fa-xmark"></i><span> Clear Form</span></a>
     <a class="flex-shrink-1 btn btn-outline-dark float-end" id="addButton"><i class="fa-regular fa-plus"></i><span> Add A Bucket</span></a>
 
-    <div class="">
+    <div>
       <div class="form-horizontal">
-        <span class = "h2"><label for="resource">Local Permissions Summary</label> </span>
+        <h4><label for="resource">Local Permissions Summary</label></h4>
         <a class="flex-shrink-1 btn btn-outline-success btn-sm" id="copyBtn"><i class="fa-solid fa-copy"></i><span> Copy to Clipboard</span></a>
         <div class="fancy-copy">
           <textarea id="resource" class="form-control" rows="16" readonly></textarea>
@@ -28,4 +29,5 @@
         </div>
       </div>
     </div>
+    <hr>
 </div>
